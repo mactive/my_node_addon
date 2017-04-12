@@ -16,8 +16,8 @@ namespace demo {
     Local<Function> cb = Local<Function>::Cast(args[0]);
     const unsigned argc = 1;
     Local<Value> argv[argc] = { String::NewFromUtf8(isolate, "hello mac") };
-    printf("%s",*args[0]);
-    printf("%s", *argv);
+    printf("%s",args[0]->ToString());
+    // printf("%S", *argv);
     printf("\r\n");
     cb->Call(Null(isolate), argc, argv);
   }
