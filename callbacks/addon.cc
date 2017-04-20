@@ -26,7 +26,7 @@ namespace demo {
     NODE_SET_METHOD(module, "exports", RunCallback);
   }
 
-  NODE_MODULE(addon, Init);
+  NODE_MODULE(addon1, Init);
 
 
 }
